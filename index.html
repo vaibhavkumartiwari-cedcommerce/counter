@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .main{
+                height: 30vh;
+                width:60%;
+                margin: auto;
+                background-color: aliceblue;
+                padding-top: 10%;
+            }
+            .counter{
+                height: 40%;
+                width:60%;
+                margin: auto;
+                background-color: whitesmoke;
+                border: 10px solid gray;;
+                border-radius: 10px;
+                text-align: center;;
+                
+            }
+            .dec{
+                height: 100%;
+                width:30%;
+                background-color: whitesmoke;
+                float: left;
+
+            }
+            .val{
+                height: 100%;
+                width:39%;
+                background-color: whitesmoke;
+                float: left;
+                border: 1px solid gray;
+
+            }
+            .inc{
+                height: 100%;
+                width:30%;
+                background-color: whitesmoke;
+                float: left;
+
+            }
+            .inc button{
+                margin-top: 18%;
+                border: none;
+                background-color: whitesmoke;
+                font-size: 250%;
+
+            }
+            button{
+                margin-top: 14%;
+                border: none;
+                background-color: whitesmoke;
+                font-size: 250%;
+                
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="counter">
+                <div class="dec">
+                    <button onclick="decrease()">-</button>
+                </div>
+                <div class="val">
+                    <button id="target">1</button>
+                </div>
+                <div class="inc">
+                    <button onclick="increase()">+</button>
+                </div>
+
+
+
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            var num=1;
+            document.getElementById("target").innerHTML=num;
+            function decrease(){
+                num=num-1;
+                document.getElementById("target").innerHTML=num;
+                
+
+            }
+            function increase(){
+                num=num+1;
+                document.getElementById("target").innerHTML=num;
+                
+            }
+
+        </script>
+    </body>
+</html>
